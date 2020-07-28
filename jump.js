@@ -320,7 +320,7 @@ function share_tip(){
         document['getElementById'](_0x444e('0x4d'))[_0x444e('0x0')][_0x444e('0x42')]='block';
         document['getElementById']('squan')[_0x444e('0x0')][_0x444e('0x42')]='none';
     }
-    if(f.toString()!=window.wxData.shareNum){
+    if(f.toString()<window.wxData.shareNum){
         wxalert(unescape(window.wxData.hint[f]),'确定');
     }else if(f.toString()==window.wxData.shareNum){
         wxalert(unescape(window.wxData.hint[f]),'确定',zp);
