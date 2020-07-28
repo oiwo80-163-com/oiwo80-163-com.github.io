@@ -322,8 +322,10 @@ function share_tip(){
     }
     if(f.toString()!=window.wxData.shareNum){
         wxalert(unescape(window.wxData.hint[f]),'确定');
-    }else{
+    }else if(f.toString()==window.wxData.shareNum){
         wxalert(unescape(window.wxData.hint[f]),'确定',zp);
+    }else{
+        zp();
     }
 
 }
